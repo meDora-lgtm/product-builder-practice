@@ -149,45 +149,56 @@ header p {
     border-top: 1px solid var(--border-color);
     padding-top: 1.5rem;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
-h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
+.contact-section {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+    text-align: left;
 }
 
-#history-list {
-    list-style: none;
-    max-height: 250px;
-    overflow-y: auto;
+.form-group {
+    margin-bottom: 0.8rem;
 }
 
-.history-item {
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
     background-color: var(--history-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--button-bg);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.secondary-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--button-bg);
+    color: var(--button-bg);
     padding: 0.8rem;
     border-radius: 8px;
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
 }
 
-.history-balls {
-    display: flex;
-    gap: 4px;
-}
-
-.history-ball {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    font-size: 0.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.secondary-btn:hover {
+    background-color: var(--button-bg);
     color: white;
 }
 
